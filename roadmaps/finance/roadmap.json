@@ -1,0 +1,109 @@
+{
+  "id": "finance",
+  "title": "Finance",
+  "description": "Parcours d'apprentissage complet pour maîtriser la finance, de zéro à expert.",
+  "version": "1.0.0",
+  "audience": "debutant",
+  "last_updated": "2026-03-17",
+  "maintainers": [],
+  "nodes": [
+    {
+      "id": "fondations",
+      "label": "Fondations",
+      "level": 1,
+      "type": "required",
+      "description": "Les bases indispensables avant de se spécialiser.",
+      "children": ["maths-financieres", "comptabilite-base", "culture-eco"]
+    },
+    {
+      "id": "maths-financieres",
+      "label": "Mathématiques financières",
+      "level": 1,
+      "type": "required",
+      "skills": ["Pourcentages et taux", "Intérêts simples et composés", "Actualisation et valeur temps", "Inflation"],
+      "resources": ["mooc-khan-finance"]
+    },
+    {
+      "id": "comptabilite-base",
+      "label": "Comptabilité de base",
+      "level": 1,
+      "type": "required",
+      "skills": ["Bilan comptable", "Compte de résultat", "Tableau de flux de trésorerie", "Partie double"],
+      "resources": ["mooc-coursera-accounting"]
+    },
+    {
+      "id": "culture-eco",
+      "label": "Culture économique",
+      "level": 1,
+      "type": "required",
+      "skills": ["Microéconomie de base", "Macroéconomie (PIB, inflation, chômage)", "Politique monétaire", "Cycles économiques"],
+      "resources": ["livre-economie-krugman"]
+    },
+    {
+      "id": "finance-perso",
+      "label": "Finance personnelle",
+      "level": 2,
+      "type": "branch",
+      "parent": "fondations",
+      "skills": ["Budgétisation (règle 50/30/20)", "Épargne de précaution", "Investissement long terme", "Retraite et fiscalité"],
+      "resources": ["livre-ramit-sethi", "mooc-personal-finance"]
+    },
+    {
+      "id": "finance-entreprise",
+      "label": "Finance d'entreprise",
+      "level": 2,
+      "type": "branch",
+      "parent": "fondations",
+      "skills": ["Analyse financière", "Valorisation (DCF, multiples)", "Structure de capital", "M&A"],
+      "resources": ["livre-damodaran", "mooc-cfi-corporate"]
+    },
+    {
+      "id": "marches-financiers",
+      "label": "Marchés & investissement",
+      "level": 2,
+      "type": "branch",
+      "parent": "fondations",
+      "skills": ["Classes d'actifs", "Gestion de portefeuille", "Analyse fondamentale", "Gestion du risque"],
+      "resources": ["livre-graham", "livre-malkiel"]
+    },
+    {
+      "id": "fintech",
+      "label": "Fintech & finance numérique",
+      "level": 2,
+      "type": "branch",
+      "parent": "fondations",
+      "skills": ["Paiements & néobanques", "Blockchain & DeFi", "IA en finance", "Open banking"],
+      "resources": ["mooc-blockchain-coursera"]
+    },
+    {
+      "id": "certifications",
+      "label": "Certifications",
+      "level": 3,
+      "type": "optional",
+      "options": ["CFA", "FRM", "CFP", "CPA"]
+    },
+    {
+      "id": "finance-quant",
+      "label": "Finance quantitative",
+      "level": 3,
+      "type": "optional",
+      "skills": ["Python pour la finance", "Modèles statistiques", "Algorithmic trading", "Risk modelling"],
+      "resources": ["livre-hull-options", "mooc-python-finance"]
+    }
+  ],
+  "resources": [
+    { "id": "livre-damodaran", "title": "Investment Valuation", "author": "Aswath Damodaran", "type": "book", "level": "intermediaire", "url": "https://pages.stern.nyu.edu/~adamodar/", "free": true },
+    { "id": "livre-graham", "title": "The Intelligent Investor", "author": "Benjamin Graham", "type": "book", "level": "debutant", "free": false },
+    { "id": "livre-malkiel", "title": "A Random Walk Down Wall Street", "author": "Burton Malkiel", "type": "book", "level": "debutant", "free": false },
+    { "id": "mooc-khan-finance", "title": "Finance & Capital Markets", "author": "Khan Academy", "type": "mooc", "level": "debutant", "url": "https://www.khanacademy.org/economics-finance-domain/core-finance", "free": true },
+    { "id": "mooc-coursera-accounting", "title": "Introduction to Financial Accounting", "author": "Wharton / Coursera", "type": "mooc", "level": "debutant", "url": "https://www.coursera.org/learn/wharton-accounting", "free": false },
+    { "id": "mooc-cfi-corporate", "title": "Financial Modeling & Valuation", "author": "CFI", "type": "mooc", "level": "intermediaire", "url": "https://corporatefinanceinstitute.com", "free": false }
+  ],
+  "projects": [
+    { "id": "budget-tracker", "title": "Tracker de budget personnel", "level": "debutant", "tool": "Excel / Google Sheets", "duration": "1 weekend" },
+    { "id": "portfolio-fictif", "title": "Portefeuille d'investissement fictif", "level": "debutant", "tool": "Google Sheets + Yahoo Finance", "duration": "1 mois" },
+    { "id": "analyse-entreprise", "title": "Analyse financière d'une entreprise réelle", "level": "intermediaire", "tool": "Rapports annuels + Excel", "duration": "2 weekends" },
+    { "id": "modele-dcf", "title": "Modèle de valorisation DCF", "level": "intermediaire", "tool": "Excel avancé", "duration": "1 semaine" },
+    { "id": "dashboard-python", "title": "Dashboard financier en Python", "level": "avance", "tool": "Python (pandas, yfinance, Streamlit)", "duration": "2 semaines" }
+  ]
+}
