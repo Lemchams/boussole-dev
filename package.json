@@ -1,0 +1,9 @@
+{
+  "name": "boussole",
+  "version": "1.0.0",
+  "description": "Des roadmaps communautaires pour les domaines non-techniques",
+  "scripts": {
+    "validate": "node scripts/validate.js"
+  },
+  "license": "CC-BY-4.0"
+}
